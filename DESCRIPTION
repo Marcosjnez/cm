@@ -1,0 +1,21 @@
+Package: cm
+Type: Package
+Title: Polytomous Conjoint Measurement Models
+Version: 0.1.0
+Date: 2021-11-22
+Authors@R: c(person(given = "Marcos", family = "Jimenez", role = c("aut", "cre", "cph"), email = "marcosjnezhquez@gmail.com"), person(given="Vithor", family = "Franco", role = c("aut", "cre", "cph")))
+Description: Test and fit models from a conjoint measurement approach.
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 4.0)
+Imports: Rcpp, Rcsdp
+URL: https://github.com/Marcosjnez/cm
+BugReports: https://github.com/Marcosjnez/cm/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+LinkingTo: Rcpp, RcppArmadillo, RcppEnsmallen
+NeedsCompilation: yes
+Packaged: 2021-11-22 14:30:19 UTC; marcos
+Author: Marcos Jimenez [aut, cre, cph],
+  Vithor Franco [aut, cre, cph]
+Maintainer: Marcos Jimenez <marcosjnezhquez@gmail.com>

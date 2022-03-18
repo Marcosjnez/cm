@@ -1,0 +1,45 @@
+#' @export
+standardize <- function(x) {
+  .Call(`_cm_standardize`, x)
+}
+
+#' @export
+pava <- function(a, c, b) {
+  .Call(`_cm_pava`, a, c, b)
+}
+
+#' @export
+stress_optim <- function(y, X, weights, numBasis = 10L, maxIterations = 1000L, armijoConstant = 1e-4, wolfe = 1, minGradientNorm = 1e-6, factr = 1e-8, maxLineSearchTrials = 50L, minStep = 1e-15, maxStep = 1e20) {
+  .Call(`_cm_stress_optim`, y, X, weights, numBasis, maxIterations, armijoConstant, wolfe, minGradientNorm, factr, maxLineSearchTrials, minStep, maxStep)
+}
+
+#' @export
+kruskal_monanova <- function(y, X, w, verbose = FALSE, max_iter = 100L, rel_tol = 1e-5) {
+  .Call(`_cm_kruskal_monanova`, y, X, w, verbose, max_iter, rel_tol)
+}
+
+#' @export
+monotonic <- function(X, y, weights, D, lambda, numBasis = 10L, maxIterations = 1000L, armijoConstant = 1e-4, wolfe = 2, minGradientNorm = 1e-6, factr = 1e-8, maxLineSearchTrials = 50L, minStep = 1e-15, maxStep = 1e20) {
+  .Call(`_cm_monotonic`, X, y, weights, D, lambda, numBasis, maxIterations, armijoConstant, wolfe, minGradientNorm, factr, maxLineSearchTrials, minStep, maxStep)
+}
+
+#' @export
+b_spline <- function(x, knots, degree, boundaries, center = FALSE, intercept = FALSE) {
+  .Call(`_cm_b_spline`, x, knots, degree, boundaries, center, intercept)
+}
+
+#' @export
+tri_mat <- function(dim) {
+  .Call(`_cm_tri_mat`, dim)
+}
+
+#' @export
+diff_mat <- function(n, p, difference, intercept = TRUE, multiply = TRUE) {
+  .Call(`_cm_diff_mat`, n, p, difference, intercept, multiply)
+}
+
+#' @export
+GCV_cpp <- function(y, x, k, degree, difference, boundaries, lambda_range) {
+  .Call(`_cm_GCV_cpp`, y, x, k, degree, difference, boundaries, lambda_range)
+}
+
