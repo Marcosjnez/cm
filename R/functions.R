@@ -90,9 +90,9 @@ plot.GCV <- function(scores, ...) {
 #' @export
 additive <- function(I, J, K) {
 
-  A <- runif(I)
-  P <- runif(J)
-  U <- runif(K)
+  A <- sort(runif(I))
+  P <- sort(runif(J))
+  U <- sort(runif(K))
 
   eta <- vector(length = I*J*K)
 
@@ -113,9 +113,9 @@ additive <- function(I, J, K) {
 #' @export
 distributive <- function(I, J, K) {
 
-  A <- runif(I)
-  P <- runif(J)
-  U <- runif(K)
+  A <- sort(runif(I))
+  P <- sort(runif(J))
+  U <- sort(runif(K))
 
   eta <- vector(length = I*J*K)
 
@@ -136,9 +136,9 @@ distributive <- function(I, J, K) {
 #' @export
 dual_distributive <- function(I, J, K) {
 
-  A <- runif(I)
-  P <- runif(J)
-  U <- runif(K)
+  A <- sort(runif(I))
+  P <- sort(runif(J))
+  U <- sort(runif(K))
 
   eta <- vector(length = I*J*K)
 
@@ -159,8 +159,8 @@ dual_distributive <- function(I, J, K) {
 #' @export
 semi_additive <- function(I, J, K) {
 
-  A <- runif(I)
-  P <- runif(J)
+  A <- sort(runif(I))
+  P <- sort(runif(J))
 
   eta <- vector(length = I*J*K)
 
@@ -181,9 +181,9 @@ semi_additive <- function(I, J, K) {
 #' @export
 additive_joint <- function(I, J, K) {
 
-  A <- runif(I)
-  P <- runif(J)
-  U <- runif(K)
+  A <- sort(runif(I))
+  P <- sort(runif(J))
+  U <- sort(runif(K))
 
   eta <- vector(length = I*J*K)
 
